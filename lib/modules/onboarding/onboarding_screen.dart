@@ -108,7 +108,7 @@ class _MaxBoardingState extends State<MaxBoarding> {
                               ? controller.nextPage(
                                   duration: const Duration(milliseconds: 300),
                                   curve: Curves.easeOut)
-                              : widget.onRoute;
+                              : widget.onRoute!();
                         },
                       ),
                     ],

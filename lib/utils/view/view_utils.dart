@@ -135,16 +135,6 @@ RichText coloredText(String text) {
 AppBar appBar(BuildContext context,
     {List<Widget>? actions, Color? color, Color? textColor, String? title}) {
   return AppBar(
-    leading: IconButton(
-        onPressed: () {
-          Navigator.of(context).pop();
-        },
-        icon: SvgPicture.asset(
-          'assets/ic_back.svg',
-          package: 'max_splash_boarding',
-          width: 30,
-          height: 30,
-        )),
     elevation: 0.0,
     // ignore: prefer_const_constructors
     title: Text(
