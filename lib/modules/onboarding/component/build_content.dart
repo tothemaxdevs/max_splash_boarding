@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:max_splash_boarding/config/size/size.config.dart';
 import 'package:max_splash_boarding/utils/view/view_utils.dart';
 
@@ -39,13 +40,16 @@ class OnBoardingContent extends StatelessWidget {
                 description ?? '',
                 style: const TextStyle(
                   fontSize: 16,
-                  color: Colors.grey,
+                  color: Colors.black87,
                 ),
               ),
               sizeH(32),
             ],
           ),
-          Image.asset(imageAsset!)
+          Semantics(
+              label: 'Onboarding $title',
+              readOnly: true,
+              child: Image.asset(imageAsset!))
         ],
       ),
     );
